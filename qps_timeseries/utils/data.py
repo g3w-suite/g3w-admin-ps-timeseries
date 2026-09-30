@@ -46,6 +46,7 @@ def get_base_plot_data(qgs_feature, qgs_layer, qps_timeseries_layer=None):
     # if providerType == 'ogr' and ps_source.lower().endswith(".shp"):
     # Shapefile
     for idx, fld in enumerate(ps_fields):
+        # True if field name does NOT match a date field pattern like "D20231227" (D + 8 digits)
         if QRegExp("D\\d{8}", Qt.CaseInsensitive).indexIn(fld.name()) < 0:
             # info fields are all except those containing dates
             infoFields.append(fld.name())
