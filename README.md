@@ -1,4 +1,6 @@
-# G3W-ADMIN-QPS-TIMESERIES v1.0.0-beta.3
+# G3W-ADMIN-QPS-TIMESERIES
+
+[![PyPI version](https://img.shields.io/pypi/v/qps_timeseries)](https://pypi.org/project/qps_timeseries/)
 
 Porting on G3W-SUITE of QGIS desktop plugin https://plugins.qgis.org/plugins/pstimeseries/
 
@@ -57,3 +59,20 @@ Add the above lines to your `scripts/setup.sh` file.
 ## Sample data
 
 The [qps_timeseries.qgs](qps_timeseries/tests/data/projects/qps_timeseries.qgs) project is available in the [tests](qps_timeseries/tests/data/) folder (EPSG:4326).
+
+## Development and tests
+
+The integration BDD scenarios are in
+[`qps_timeseries/tests/features`](qps_timeseries/tests/features). They run in
+the G3W-ADMIN/QGIS environment used by CI. Install test dependencies:
+
+```sh
+python3 -m pip install -r requirements_test.txt
+```
+
+From the configured G3W-ADMIN directory, run:
+
+```sh
+python3 manage.py behave --simple qps_timeseries/tests
+python3 manage.py test qps_timeseries
+```
