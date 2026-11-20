@@ -1,6 +1,6 @@
 # G3W-ADMIN-QPS-TIMESERIES
 
-[![PyPI version](https://img.shields.io/pypi/v/qps_timeseries)](https://pypi.org/project/qps_timeseries/)
+[![PyPI version](https://img.shields.io/pypi/v/g3w-admin-ps-timeseries)](https://pypi.org/project/g3w-admin-ps-timeseries/)
 
 Porting on G3W-SUITE of QGIS desktop plugin https://plugins.qgis.org/plugins/pstimeseries/
 
@@ -27,7 +27,7 @@ pip3 install git+https://github.com/g3w-suite/g3w-admin-ps-timeseries.git@v1.0.0
 # pip3 install -e /g3w-admin/plugins/qps_timeseries
 
 # Install module from PyPi (not yet available)
-# pip3 install g3w-admin-qps-timeseries
+# pip3 install g3w-admin-ps-timeseries
 ```
 
 Enable `'qps_timeseries'` module adding it to `G3W_LOCAL_MORE_APPS` list:

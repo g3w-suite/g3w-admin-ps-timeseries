@@ -6,7 +6,7 @@ requires        = [
 ]
 
 [project]
-name            = "qps_timeseries"
+name            = "g3w-admin-ps-timeseries"
 dynamic         = [
     "version",              # retrieve package version from git tags
     "dependencies",         # retrieve package dependencies from requirements.txt
